@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bf5d9867aa.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Christhofer Vieira</title>
+</head>
+<body>
+    <header>
+        
+            <img class="logo" src="./Minimal Coding wallpaper (3840x2160)2.png">
+        
+        <ul>
+            <li>
+                <a target="_blank" href="">github</a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:teste@teste.com">email</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/4999999999">whatsapp</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="conteiner">
+            <div class="name">
+                <h1>Christhofer Fernando Vieira</h1>
+                <h5>Programador Web</h5>
+            </div>
+            <div onclick="displayAbout()" id="arrow"> 
+                <i id="animation" class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div style="display: none;" id="about">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus cumque iure aliquam totam autem corporis, 
+                    quae doloremque deserunt at quis molestiae dolor quasi tenetur deleniti fuga asperiores, quia cupiditate voluptatum consectetur consequatur sunt repellendus voluptate.</p>
+            </div>
+            <div class="form">
+                <div>
+                    <p>deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="seu melhor email!">
+                    <button>enviar!!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
